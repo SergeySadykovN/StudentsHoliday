@@ -20,5 +20,6 @@ def write_holiday_cities(first_letter):
 
 
 
+
 letter = "L"
 write = write_holiday_cities(letter)
