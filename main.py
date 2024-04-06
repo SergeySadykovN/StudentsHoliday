@@ -34,7 +34,7 @@ def write_holiday_cities(first_letter):
     # создаем файл для записи
     with (open('holiday.csv', 'w', newline='', encoding='utf8') as file_out):
         writer = csv.writer(file_out)  # врайтер для записи данных в holiday.csv
-
+        writer.writerow([f'Информация о городах людей, имена которых начинаются на: {first_letter} '])
         writer.writerow(['Уже были в: ', ', '.join(sorted(visited_set))])
         writer.writerow(['Хотят побывать в: ', ', '.join(sorted(wish_set))])
         writer.writerow(['Еще не были в: ', ', '.join(sorted(not_been))])
