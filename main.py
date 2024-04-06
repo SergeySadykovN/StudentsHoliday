@@ -37,7 +37,7 @@ def write_holiday_cities(first_letter):
 
         writer.writerow(['Уже были в: ', ', '.join(sorted(visited_set))])
         writer.writerow(['Хотят побывать в: ', ', '.join(sorted(wish_set))])
-        writer.writerow(['Еще не были в: ', ', '.join(not_been)])
+        writer.writerow(['Еще не были в: ', ', '.join(sorted(not_been))])
         writer.writerow(['Следующий город: ', next_city])
 
 
